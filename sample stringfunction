@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.Scanner;
+class Main{
+public static void main(String [] args){
+String name;int counter = 0;
+System.out.println("Enter a long string....");
+Scanner in = new Scanner(System.in);
+name  = in.nextLine();
+System.out.println("Length of string is : " + name.length());
+System.out.println("Splitted words : ");
+String[] split = name.split("\\s");
+for(String w:split){
+System.out.println(w);
+counter++;
+}
+System.out.println("Number of words you have entered is : " + counter);
+}
+}
